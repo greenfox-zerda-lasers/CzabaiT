@@ -1,0 +1,22 @@
+
+p{
+  font-size: 18px;
+  margin: 25px 0px;
+  padding: 45px 40px;
+  border: 2px solid black;
+  width: 200px;
+  background-image: url("duck.png");
+  background-repeat: no-repeat;
+}
+
+#firstduck{
+  background-position: left center;
+}
+
+#secondduck{
+  background-position: center center;
+}
+
+#thirdduck{
+  background-position: right bottom;
+};

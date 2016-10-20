@@ -1,0 +1,12 @@
+div{
+  color: green;
+}
+
+p:first-letter{
+  color: purple;
+}
+
+#set{
+  color: blue;
+  font-style: italic;
+}

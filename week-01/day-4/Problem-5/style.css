@@ -1,0 +1,20 @@
+h1{
+  color: blue;
+}
+
+h2{
+  color: orange;
+}
+
+.ingred{
+  color: blue;
+  list-style: square;;
+}
+
+#apple{
+  color: red;
+}
+
+.disc{
+  list-style: disc;
+}
