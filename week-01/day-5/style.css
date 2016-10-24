@@ -1,0 +1,115 @@
+body{
+  font-family: 'Josefin Sans', serif;
+  margin-top: 0px;
+}
+
+header{
+  background-image: url(anakin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px auto 60px;
+  width: 1280px;
+  height: 410px;
+  color: #222222;
+  font-family: 'Abril Fatface';
+  position: relative;
+}
+
+header h2{
+  font-size: 39px;
+  position: absolute;
+  top: 220px;
+  left: 295px;
+}
+
+header h1{
+  font-size: 77px;
+  line-height: 1;
+  position: absolute;
+  top: 245px;
+  left: 295px;
+}
+
+
+main{
+  font-size: 16px;
+  font-family: 'Josefin Sans', serif;
+  color: #222222;
+  line-height: 1.9em;
+  font-weight: 400;
+  width: 700px;
+  margin: 0px auto;
+}
+
+.begin{
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+#anal{
+  font-weight: bold;
+}
+
+ul{
+  list-style: square;
+  margin-bottom: 47px;
+}
+
+#adv{
+  line-height: 1.5em;
+}
+
+blockquote{
+  font-family: 'Abril Fatface', font;
+  font-size: 49px;
+  line-height: 60px;
+  color: #FFFFFF;
+  background-color: #444444;
+  width: 720px;
+  margin-left: -50px;
+  margin-bottom: 50px;
+  padding: 50px 20px 60px 60px;
+  position: relative;
+}
+
+blockquote::before{
+  content:'“';
+  font-size: 150px;
+  line-height: 70px;
+  position: absolute;
+  margin: 0;
+  top: 25px;
+  left: 0;
+}
+
+.nota{
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.design{
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+}
+
+.achiv{
+  margin-bottom: 35px;
+}
+
+h3{
+  font-family: 'Merriweather';
+  font-size: 15px;
+  font-style: italic;
+  margin: 0px 0px 15px;
+}
+
+hr{
+  width: 750px;
+  margin-left: -25px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 60px;
+}
