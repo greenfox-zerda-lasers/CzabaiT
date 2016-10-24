@@ -1,0 +1,47 @@
+body{
+  font-family: "Segoe UI";
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 30px;
+  height: 90px;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+#acme{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+#buttons p{
+    padding: 15px;
+}
+
+#buttons p:hover{
+  background-color: white;
+  border-radius: 6px;
+}
+
+section{
+  margin: 110px auto;
+  max-width: 700px;
+}
+
+section h1{
+  font-size: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #A7A7A7;
+}

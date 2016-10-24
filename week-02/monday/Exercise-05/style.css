@@ -1,0 +1,30 @@
+body{
+  display:flex;
+  width: 600px;
+  height: 480px;
+  background-color: #808080;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+
+div{
+  box-sizing: border-box;
+  width:190px;
+  height:150px;
+  border: 5px solid;
+  background-color: #FF6347;
+}
+
+#snap{
+  font-size: 37px;
+  font-family: "Helvetica", serif;
+  position: relative;
+  left: 15px;
+  top: 5px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

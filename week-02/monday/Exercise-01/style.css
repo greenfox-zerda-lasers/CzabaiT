@@ -1,0 +1,19 @@
+body{
+  max-width: 300px;
+  text-align: justify;
+}
+
+div{
+ padding-bottom: 10px;
+ border-bottom: 2px solid;
+}
+
+img[title="left-top"]{
+  float: left;
+  margin-right: 15px;
+}
+
+img[title="right-top"]{
+  float: right;
+  margin-left: 15px;
+}

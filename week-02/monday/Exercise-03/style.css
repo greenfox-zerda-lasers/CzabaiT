@@ -1,0 +1,53 @@
+body{
+  width:auto;
+}
+
+header, footer{
+  height: 100px;
+}
+
+header{
+  background-color: aqua;
+}
+
+footer{
+  background-color: blue;
+}
+
+.content{
+  display:flex;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.sidebar{
+  flex: 0 0 100px;
+/*    width: 100px; */
+}
+
+.left{
+  background-color: orange;
+  margin-right: 25px;
+}
+
+.right{
+  background-color: purple;
+  margin-left: 25px;
+}
+
+main{
+  flex: 1 1 300px;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+
+#inner-box{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  right:  0;
+}
