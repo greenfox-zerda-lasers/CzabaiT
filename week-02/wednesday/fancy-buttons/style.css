@@ -1,0 +1,71 @@
+body {
+  margin: 30px 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 65px;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 10px;
+}
+
+
+.buttons > div:hover{
+  cursor: pointer;
+  position: relative;
+  bottom: 2px;
+}
+
+#basic {
+  color: #000000;
+  box-shadow: 0 0 0.2em grey;
+  background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(235,232,235,1) 100%);
+}
+
+#basic:active {
+  background: -webkit-linear-gradient(top, rgba(235,232,235,1) 0%, rgba(250,250,250,1) 100%);
+}
+
+#basic:hover {
+  color: #FF0080;
+}
+
+#blue, #green {
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+#blue {
+  background: -webkit-linear-gradient(top, rgba(6,181,228,1) 0%, rgba(4,140,177,1) 100%);
+}
+
+#blue:active {
+  background: -webkit-linear-gradient(top, rgba(4,140,177,1) 0%, rgba(6,181,228,1) 100%);
+}
+
+#blue:hover {
+  color: purple;
+}
+
+#green {
+  background: -webkit-linear-gradient(top, rgba(141,205,22,1) 0%, rgba(106,156,13,1) 100%);
+}
+
+#green:active {
+  background: -webkit-linear-gradient(top, rgba(106,156,13,1) 0%, rgba(141,205,22,1) 100%);
+}
+
+#green:hover {
+  color: yellow;
+}

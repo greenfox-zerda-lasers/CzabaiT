@@ -1,0 +1,177 @@
+html{
+  margin: 0;
+  background-color: white;
+}
+
+body{
+  font-family: arial;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 560px;
+  background-color: #DBD5CC;
+  margin: 0;
+  padding: 25px 70px;
+  }
+
+h1{
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+
+main h1{
+  line-height: 1em;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 8px 13px;
+  background-color: #928B96;
+  color: white;
+  border-radius: 2px;
+}
+
+main{
+  min-width: 400px;
+}
+
+.public, .contact{
+  width: 200px;
+}
+
+.public{
+  float: left;
+}
+
+.contact{
+  float: right;
+}
+
+.upper::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.adjacent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.adjacent p{
+  margin: 0px 0px 2px 0px;
+}
+
+.adjacent > div{
+  width: 100px;
+}
+
+.bold, p{
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 2em;
+}
+
+a, p, .bold, .box, .circle{
+  color: #494160;
+}
+.asterix::after{
+  content:" *";
+  color: red;
+}
+
+input, textarea{
+  font-size: 10px;
+  width: 190px;
+  padding-left: 10px;
+  line-height: 2.3em;
+  border: 1px solid grey;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 1px 0px gray;
+  margin-bottom: 18px;
+}
+
+input#year {
+  width: 50px;
+}
+
+.radiocheck{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+#morechoice{
+  color: grey;
+  font-weight: normal;
+}
+
+/*<!--downer-->*/
+
+textarea{
+  width: 410px;
+  height: 110px;
+}
+
+.terms{
+  margin: 20px 0px 10px 0px;
+}
+
+.button p{
+  margin: 0;
+}
+/*<--buttons-->*/
+
+.inline-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  text-transform: uppercase;
+  font-size: 10px;
+  border-radius: 1px;
+  padding: 6px 10px;
+  width: 150px;
+  border: 1px solid grey;
+  background-color: white;
+  box-shadow: inset 0px -20px 30px -15px rgba(173,170,173,0.67);
+}
+
+#save{
+  background-color: #473F5E;
+  color: #DBD5CC;
+  font-size: 14px;
+}
+
+#delete{
+  width: 110px;
+}
+
+/*<--icons-->*/
+
+
+input[type="radio"], input[type="checkbox"]{
+  display: none;
+  }
+
+.box, .circle{
+  width: 40px;
+  padding-right: 30px;
+}
+
+.box::before, .circle::before{
+  content: "";
+  display: inline-block;
+  padding: 6px 6px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 1px 0px grey;
+  background-color: white;
+}
+
+.circle::before{
+  border-radius: 50px;
+}
+
+input:checked + .box::before, input:checked + .circle::before{
+  background-color: pink;
+}

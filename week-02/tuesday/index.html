@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>profil-form</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>Profil</h1>
+    <main>
+<!--upper-->
+      <section class="upper">
+<!--upper left-->
+        <section class="public">
+          <h1>Személyes adatok</h1>
+          <form action="">
+            <div>
+              <label class="bold asterix" for="name">Név</label>
+              <input type="tel" id="name">
+            </div>
+            <div class="adjacent">
+              <div>
+                <p>Születési éved</p>
+                <input type="text"  id="year" placeholder="pl. 1984">
+              </div>
+              <div>
+                <p>Nemed</p>
+                <div class="radiocheck">
+                  <div>
+                    <input type="radio" id="female" name="gender" value="1">
+                    <label class="circle" for="female">nő</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="man" name="gender" value="2">
+                    <label class="circle" for="man">férfi</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Milyen márkákat szeretsz?</p>
+            <div class="radiocheck">
+              <div>
+                <div class="margoo">
+                <input type="checkbox" id="adidas">
+                <label class="box"  for="adidas">Adidas</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="apple">
+                <label class="box" for="apple">Apple</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="coca-cola">
+                <label class="box" for="coca-cola">Coca-Cola</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="mazda">
+                <label class="box" for="mazda">Mazda</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="nike">
+                <label class="box" for="nike">Nike</label>
+                </div>
+              </div>
+              <div>
+                <div class="margoo">
+                <input type="checkbox" id="opel">
+                <label class="box" for="opel">Opel</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="ray-ban">
+                <label class="box" for="ray-ban">Ray-Ban</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="starbucks">
+                <label class="box" for="starbucks">Starbucks</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="tesla">
+                <label class="box" for="tesla">Tesla</label>
+                </div>
+                <div class="margoo">
+                <input type="checkbox" id="yahoo">
+                <label class="box" for="yahoo">Yahoo</label>
+                </div>
+              </div>
+            </div>
+            <p id="morechoice">Többet is választhatsz!</p>
+          </form>
+        </section>
+<!--upper right-->
+        <section class="contact">
+          <h1>Kapcsolatok</h1>
+          <form action="">
+            <div>
+              <label class="bold asterix" for="telephone">Telefonszám</label>
+              <input type="tel" id="telephone" placeholder="+36  - -  - - -  - - - -">
+            </div>
+            <div>
+              <label class="bold asterix" for="mail">E-mail cím</label>
+              <input type="email" id="mail" placeholder="nev@domain.hu">
+            </div>
+            <div>
+              <label class="bold" for="facebook">Facebook profilod</label>
+              <input type="url" id="facebook" placeholder="http://facebook.com/...">
+            </div>
+            <div>
+              <label class="bold" for="twitter">Twitter profilod</label>
+              <input type="url" id="twitter" placeholder="http://twitter.com/...">
+            </div>
+            <div>
+              <label class="bold" for="housetype">Milyen házban laksz?</label>
+              <input type="text" list="houses" id="housetype" placeholder="Válassz típust!">
+              <datalist id="houses">
+                <option>kertesház</option>
+                <option>panel</option>
+                <option>híd alatt</option>
+              </datalist>
+            </div>
+          </form>
+        </section>
+      </section>
+<!--downer-->
+      <section class="downer">
+        <form action="">
+          <label class="bold asterix" for="introduction">Bemutatkozás</label>
+          <textarea id="introduction" placeholder="Írj magadról pár mondatot!">
+          </textarea>
+          <div class="button">
+            <p>CV feltöltése</p>
+            <button type="file">file kiválasztása</button>
+          </div>
+          <div class="terms">
+            <input type="checkbox" id="terms">
+            <label class="radiocheck terms" for="terms">Elfogadom a <a href="">felhasználási feltételeket</a></label>
+          </div>
+          <div class="inline-buttons">
+            <button id="save" type="submit">mentés</button>
+            <button id="delete" type="submit">űrlap törlése</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
