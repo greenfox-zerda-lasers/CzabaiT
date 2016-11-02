@@ -12,8 +12,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(246,246,246,1) 100%);
+  background-color: #F9F9F9
 }
 
 h1 {
@@ -24,13 +23,37 @@ h1 {
   margin: 20px 0px 0px;
   padding: 0;
   border-bottom: 1px solid #000000;
+  overflow: hidden;
 }
 
-p {
+h3 {
+  font-size: 17px;
+}
+
+p, li, blockquote {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 2px;
   margin-top: 7px;
+}
+
+blockquote {
+  margin: 20px 50px;
+  max-width: 810px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: navy;
+  margin-right: 7px;
 }
 
  .edit {
@@ -42,9 +65,10 @@ p {
 }
 
 /*--LINKS--*/
+
 a {
   font-size: 12px;
-  color: #456aa8;
+  color: blue;
   text-decoration: none;
   margin-bottom: 2px;
 }
@@ -55,7 +79,7 @@ a:hover {
 }
 
 a:visited {
-  color: #314360;
+  color: navy;
 }
 
 /*<----------------  ASIDE  ----------->*/
@@ -64,16 +88,28 @@ aside {
   float: left;
   display: flex;
   flex-wrap: wrap;
-  width: 160px;
+  width: 175px;
   margin: 0;
   padding: 0;
+}
+
+.back {
+  width: inherit;
+  height: 5em;
+  background-image: linear-gradient(#ffffff 50%,#f6f6f6 100%);
+}
+
+.aside__link, .npr {
+  position: relative;
+  bottom: 70px;
 }
 
 /*IMAGE*/
 
 .aside__link__logo {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
@@ -91,14 +127,14 @@ aside {
   font-size: 12px;
 }
 
-.npr__section--first a{
-  padding-left: 28px;
-}
-
 .npr__section a {
   display: block;
   padding-left: 40px;
   line-height: 1.5em;
+}
+
+.npr__section--first a{
+  padding-left: 25px;
 }
 
 .npr__section p {
@@ -118,7 +154,7 @@ aside {
 /*<-------------------MAIN-------------------->*/
 
 main {
-  width: calc(100% - 160px);
+  width: calc(100% - 175px);
   float: left;
 }
 
@@ -130,17 +166,84 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 8px;
+  background-image: linear-gradient(#ffffff 50%,#f6f6f6 100%);
 }
 
 .header__account {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
+
+.search {
+  max-width: 300px;
+  height: 22px;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: white;
+  box-shadow: inset 0px 15px 20px -13px rgba(232,229,232,1)
+}
+
+.searchicon {
+  display: inline;
+  float:right;
+  width: 22px;
+  height: 22px;
+  background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2213%22%3E%3Cg%20stroke-width%3D%222%22%20stroke%3D%22%236c6c6c%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M11.29%2011.71l-4-4%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%225%22%20r%3D%224%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.searchicon:hover {
+  cursor: pointer;
+}
+
+input {
+  width: 278px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.status a {
+  display: inline-block;
+  padding: 4px;
+}
+
 
 .header__menu {
   display: flex;
   justify-content: space-between;
+}
+
+.header__menu__left, .header__menu__right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__menu a:first-child {
+  position: relative;
+  top: 1px;
+  background-color: white;
+  border-left: 1px solid #a7d7f9;
+  border-bottom: 1px solid white;
+}
+
+.header__menu a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 5px 5px 2px;
+    border-right: 1px solid #a7d7f9;
+    margin: 0;
 }
 
 /*-------------ARTICLE--------------*/
@@ -149,7 +252,7 @@ article{
   background-color: #ffffff;
   box-sizing: border-box;
   padding: 1em;
-  border: 1px solid #a7d7f9
+  border: 1px solid #a7d7f9;
 }
 
 
@@ -182,7 +285,7 @@ article{
   padding: 5px;
   background-color: #F9F9F9;
   border: 1px solid #000000;
-  margin: 3px;
+  margin: 10px 10px 5px;
 }
 
 .article__begin__bio--bold {
@@ -218,9 +321,7 @@ th {
 /*------LIST-------*/
 
 .article__begin__list {
-  /*float: left;*/
-  width: 120px;
-  /*box-sizing: border-box;*/
+  width: 110px;
   padding: 3px 8px;
   background-color: #F9F9F9;
   border: 1px solid grey;
@@ -230,23 +331,95 @@ th {
   font-size: 13px;
   font-weight: bold;
   text-align: center;
+  padding: 0;
   margin: 0;
 }
 
-.article__begin__list ul{
-  list-style: none;
+.article__begin__list a {
+  font-size: 13px;
+}
+
+.article__begin__list ol {
+  counter-reset: section;
+  list-style-type: none;
   font-size: 18px;
-  padding: 4px;
+  padding: 0;
   margin: 0;
 }
 
+.article__begin__list .inner {
+  padding-left: 30px;
+}
+
+.article__begin__list li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+
+.article__begin__list li {
+  margin: 0;
+}
 
 /*----EARLY LIFE----*/
 
-.article__early > h1 {
-  overflow: hidden;
+
+
+
+/*----NASA---- +LEGACY PIC+*/
+
+.article__nasa__frame, .article__legacy__frame {
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
+.article__nasa__pics, .article__legacy__pics{
+  background-color: #F9F9F9;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 10px 10px 25px;
+}
+
+.article__nasa__pics__1--pic {
+  height: 272px;
+}
+
+.article__nasa__pics__2--pic {
+  height: 170px;
+}
+
+.article__nasa__pics--icon, .article__legacy__pics--icon {
+  float: right;
+  display: block;
+  width: 15px;
+  height: 11px;
+  padding: 0;
+  margin-left: 15px;
+  margin: 0;
+  background-image: linear-gradient( transparent,transparent ), url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2011%2015%22%20width%3D%2215%22%20height%3D%2211%22%3E%0A%20%20%20%20%3Cg%20id%3D%22magnify-clip%22%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bigbox%22%20d%3D%22M1.509%201.865h10.99v7.919h-10.99z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22smallbox%22%20d%3D%22M-1.499%206.868h5.943v4.904h-5.943z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A);
+  background-repeat: no-repeat;
+}
+
+.article__nasa__pics__text, .article__legacy__pics__text {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.article__nasa__bqs {
+  padding-left: 30px;
+}
+
+
+/*----LEGACY----*/
+
+.article__legacy__pics {
+  width: 180px;
+}
+
+.article__legacy__pics--pic {
+  height: 240px;
+}
 
 /*----REFERENCES----*/
 

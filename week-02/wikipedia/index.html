@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html>
@@ -13,6 +14,7 @@
 <!--ASIDE-->
 
     <aside>
+      <div class="back"></div>
       <a class="aside__link" href="https://en.wikipedia.org/wiki/Main_Page"><img class="aside__link__logo" src="https://tctechcrunch2011.files.wordpress.com/2010/05/wikipedia1.png" alt="wiki-logo">
       </a>
       <nav class="npr">   <!--npr__section=nav primary-->
@@ -71,11 +73,12 @@
     <main>
       <header>
         <div class="header__account">
-          <div id="status"></div>
-          <a href="#">Talk</a>
-          <a href="#">Contributions</a>
-          <a href="#">Create account</a>
-          <a href="#">Log in</a>
+          <div class="status">
+            <a href="#">Talk</a>
+            <a href="#">Contributions</a>
+            <a href="#">Create account</a>
+            <a href="#">Log in</a>
+          </div>
         </div>
         <div class="header__menu">
           <div class="header__menu__left">
@@ -86,7 +89,10 @@
             <a href="#">Read</a>
             <a href="#">Edit</a>
             <a href="#">View history</a>
-            <input type="search" placeholder="Search">
+            <div class="search">
+              <input type="search" placeholder="Search Wikipedia">
+              <div class="searchicon"></div>
+            </div>
           </div>
         </div>
       </header>
@@ -130,84 +136,121 @@
               </tbody>
             </table>
           </div>
-          <p>Margaret Heafield Hamilton (born August 17, 1936)[1] is a computer scientist, systems engineer and business owner. She was Director of the Software Engineering Division[2] of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program.[3] In 1986, she became the founder and CEO of Hamilton Technologies, Inc., in Cambridge, Massachusetts. The company was developed around the Universal Systems Language based on her paradigm of Development Before the Fact (DBTF) for systems and software design.[4]</p>
+          <p>Margaret Heafield Hamilton (born August 17, 1936)<sup>[<a href="#">1</a>]</sup> is a computer scientist, systems engineer and business owner. She was Director of the Software Engineering Division<sup>[<a href="#">2</a>]</sup> of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program.<sup>[<a href="#">3</a>]</sup> In 1986, she became the founder and CEO of Hamilton Technologies, Inc., in Cambridge, Massachusetts. The company was developed around the Universal Systems Language based on her paradigm of Development Before the Fact (DBTF) for systems and software design.<sup>[<a href="#">4</a>]</sup></p>
           <p>Hamilton has published over 130 papers, proceedings, and reports about the 60 projects and six major programs in which she has been involved.</p>
           <div class="article__begin__list">
-            <list >
-              <p>Contents [<a href="#">hide</a>]</p>
-              <ul>
-                <li><a href="#">1 Early life</a></li>
-                <li><a href="#">2 SAGE Project</a></li>
-                <li><a href="#">3 NASA</a></li>
-                  <ul>
-                    <li><a href="#">3.1 Apollo 11</a></li>
-                  </ul>
-                <li><a href="#">4 Businesses</a></li>
-                <li><a href="#">5 Legacy</a></li>
-                  <ul>
-                  <li><a href="#">5.1 Awards</a></li>
-                  </ul>
-                <li><a href="#">6 Personal life</a></li>
-                <li><a href="#">7 Publications</a></li>
-                <li><a href="#">8 References</a></li>
-              </ul>
+            <list>
+              <p>Contents <sup>[<a href="#"><a href="#">hide</a></a>]</sup></p>
+              <ol>
+                <li><a href="#">Early life</a></li>
+                <li><a href="#">SAGE Project</a></li>
+                <li><a href="#">NASA</a>
+                  <ol class="inner">
+                    <li><a href="#">Apollo 11</a></li>
+                  </ol>
+                </li>
+                <li><a href="#">Businesses</a></li>
+                <li><a href="#">Legacy</a>
+                  <ol class="inner">
+                  <li><a href="#">Awards</a></li>
+                  </ol>
+                </li>
+                <li><a href="#">Personal life</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">References</a></li>
+              </ol>
             </list>
           </div>
         </section>
 
         <section class="article__early">
-          <h1>Early life<p class="edit">[<a href="#"> edit </a>]</p></h1>
-          <p>Margaret Heafield was born in Paoli, Indiana to Kenneth Heafield and Ruth Esther Heafield (née Partington).[5] After graduating from Hancock High School in 1954, she started out in mathematics at the University of Michigan and earned a B.A. in mathematics with a minor in philosophy from Earlham College in 1958.[6][7] She briefly taught high school mathematics and French upon graduation, in order to support her husband while he worked on his undergraduate degree at Harvard, with the ultimate goal of pursuing a graduate degree at a later time. She moved to Boston, Massachusetts with the intention of doing graduate study in abstract mathematics at Brandeis University. In 1960 she took an interim position at MIT to develop software for predicting weather on the LGP-30 and the PDP-1 computers (at Marvin Minsky's Project MAC) for professor Edward Norton Lorenz in the meteorology department.[8][1][9] Hamilton wrote that at that time, computer science and software engineering were not yet disciplines; instead, programmers learned on the job with hands-on experience.[3]</p>
+          <h1>Early life<p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
+          <p>Margaret Heafield was born in Paoli, Indiana to Kenneth Heafield and Ruth Esther Heafield (née Partington).<sup>[<a href="#">5</a>]</sup> After graduating from Hancock High School in 1954, she started out in mathematics at the University of Michigan and earned a B.A. in mathematics with a minor in philosophy from Earlham College in 1958.<sup>[<a href="#">6</a>]</sup><sup>[<a href="#">7</a>]</sup> She briefly taught high school mathematics and French upon graduation, in order to support her husband while he worked on his undergraduate degree at Harvard, with the ultimate goal of pursuing a graduate degree at a later time. She moved to Boston, Massachusetts with the intention of doing graduate study in abstract mathematics at Brandeis University. In 1960 she took an interim position at MIT to develop software for predicting weather on the LGP-30 and the PDP-1 computers (at Marvin Minsky's Project MAC) for professor Edward Norton Lorenz in the meteorology department.<sup>[<a href="#">8</a>]</sup><sup>[<a href="#">1</a>]</sup><sup>[<a href="#">9</a>]</sup> Hamilton wrote that at that time, computer science and software engineering were not yet disciplines; instead, programmers learned on the job with hands-on experience.<sup>[<a href="#">3</a>]</sup></p>
           <p>From 1961 to 1963, she worked on the SAGE Project at Lincoln Lab, where she was one of the programmers who wrote software for the first AN/FSQ-7 computer (the XD-1), to search for "unfriendly" aircraft; she also wrote software for the Air Force Cambridge Research Laboratories.</p>
         </section>
 
         <section class="article__sage">
-          <h1>SAGE Project <p class="edit">[<a href="#"> edit </a>]</p></h1>
+          <h1>SAGE Project <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
           <p>The SAGE Project was an extension of Project Whirlwind, started by MIT, to create a computer system that could predict weather systems and track their movements through simulators; SAGE was soon developed for military use in anti-aircraft air defense from potential Soviet attacks during the Cold War. For her part, Hamilton described her duties as such,</p>
-          <blockquote>What they used to do when you came into this organization as a beginner, was to assign you this program which nobody was able to ever figure out or get to run. When I was the beginner they gave it to me as well. And what had happened was it was tricky programming, and the person who wrote it took delight in the fact that all of his comments were in Greek and Latin. So I was assigned this program and I actually got it to work. It even printed out its answers in Latin and Greek. I was the first one to get it to work.[10]</blockquote>
+          <blockquote>What they used to do when you came into this organization as a beginner, was to assign you this program which nobody was able to ever figure out or get to run. When I was the beginner they gave it to me as well. And what had happened was it was tricky programming, and the person who wrote it took delight in the fact that all of his comments were in Greek and Latin. So I was assigned this program and I actually got it to work. It even printed out its answers in Latin and Greek. I was the first one to get it to work.<sup>[<a href="#">10</a>]</sup></blockquote>
           <p>It was her efforts on this project that made her a candidate for the position at NASA as the lead developer for Apollo flight software.
           </p>
         </section>
 
         <section class="article__nasa">
-          <h1>NASA <p class="edit">[<a href="#"> edit </a>]</p></h1>
-          <p>Hamilton then joined the Charles Stark Draper Laboratory at MIT, which at the time was working on the Apollo space mission. She eventually led a team credited with developing the software for Apollo and Skylab.[11] Hamilton's team was responsible for developing in-flight software,[12] which included algorithms designed by various senior scientists for the Apollo command module, lunar lander, and the subsequent Skylab.[3][13] Another part of her team designed and developed the systems software [14] which included the error detection and recovery software such as restarts and the Display Interface Routines (AKA the Priority Displays) which Hamilton designed and developed.[15] She worked to gain hands-on experience during a time when computer science courses were uncommon and software engineering courses did not exist.[3]</p>
-          <p>Her areas of expertise include systems design and software development, enterprise and process modelling, development paradigm, formal systems modeling languages, system-oriented objects for systems modelling and development, automated life-cycle environments, methods for maximizing software reliability and reuse, domain analysis, correctness by built-in language properties, open-architecture techniques for robust systems, full life-cycle automation, quality assurance, seamless integration, error detection and recovery techniques, man-machine interface systems, operating systems, end-to-end testing techniques, and life-cycle management techniques.[3][16]</p>
-          <h3>Apollo 11 <p class="edit">[<a href="#"> edit </a>]</p> </h3>
+          <h1>NASA <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
+          <div class="article__nasa__frame">
+            <div class="article__nasa__pics">
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton.gif" class="article__nasa__pics__1--pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Margaret_Hamilton.gif/220px-Margaret_Hamilton.gif" alt="standing Hamilton">
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton.gif" class="article__nasa__pics--icon">
+              </a>
+              <p class="article__nasa__pics__text">
+                Hamilton standing next to the navigation software that she and her MIT team produced for the Apollo project.
+              </p>
+            </div>
+            <div class="article__nasa__pics">
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton_in_action.jpg" class="article__nasa__pics__2--pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Margaret_Hamilton_in_action.jpg/220px-Margaret_Hamilton_in_action.jpg" alt="sitting Hamilton">
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton.gif" class="article__nasa__pics--icon">
+              </a>
+              <p class="article__nasa__pics__text">
+                Hamilton during her time as lead Apollo flight software designer.
+              </p>
+            </div>
+          </div>
+          <p>Hamilton then joined the Charles Stark Draper Laboratory at MIT, which at the time was working on the Apollo space mission. She eventually led a team credited with developing the software for Apollo and Skylab.<sup>[<a href="#">11</a>]</sup> Hamilton's team was responsible for developing in-flight software,<sup>[<a href="#">12</a>]</sup> which included algorithms designed by various senior scientists for the Apollo command module, lunar lander, and the subsequent Skylab.<sup>[<a href="#">3</a>]</sup><sup>[<a href="#">13</a>]</sup> Another part of her team designed and developed the systems software <sup>[<a href="#">14</a>]</sup> which included the error detection and recovery software such as restarts and the Display Interface Routines (AKA the Priority Displays) which Hamilton designed and developed.<sup>[<a href="#">15</a>]</sup> She worked to gain hands-on experience during a time when computer science courses were uncommon and software engineering courses did not exist.<sup>[<a href="#">3</a>]</sup></p>
+          <p>Her areas of expertise include systems design and software development, enterprise and process modelling, development paradigm, formal systems modeling languages, system-oriented objects for systems modelling and development, automated life-cycle environments, methods for maximizing software reliability and reuse, domain analysis, correctness by built-in language properties, open-architecture techniques for robust systems, full life-cycle automation, quality assurance, seamless integration, error detection and recovery techniques, man-machine interface systems, operating systems, end-to-end testing techniques, and life-cycle management techniques.<sup>[<a href="#">3</a>]</sup><sup>[<a href="#">16</a>]</sup></p>
+          <h3>Apollo 11 <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p> </h3>
+          <p>In one of the critical moments of the Apollo 11 mission, the Apollo Guidance Computer together with the on-board flight software averted an abort of the landing on the Moon. Three minutes before the Lunar lander reached the Moon's surface, several computer alarms were triggered. The computer was overloaded with interrupts caused by incorrectly phased power supplied to the lander's rendezvous radar.<sup>[<a href="#">17</a>]</sup><sup>[<a href="#">18</a>]</sup><sup>[<a href="#">4</a>]</sup> The program alarms indicated "executive overflows", meaning the guidance computer could not complete all of its tasks in real time and had to postpone some of them.<sup>[<a href="#">19</a>]</sup> The asynchronous executive designed by J. Halcombe Laning <sup>[<a href="#">17</a>]</sup><sup>[<a href="#">20</a>]</sup> allowed the computer to cope with the increased demand by prioritizing tasks. Hamilton's priority alarm displays interrupted the astronauts' normal displays to warn them that there was an emergency “giving the astronauts a go/no go decision (to land or not to land)”.<sup>[<a href="#">21</a>]</sup> Jack Garman, a NASA computer engineer in mission control, recognized the meaning of the errors that were presented to the astronauts by the priority displays and shouted, "Go, go!" And on they went.”<sup>[<a href="#">22</a>]</sup> Dr. Paul Curto, senior technologist who nominated Hamilton for a NASA Space Act Award, called Hamilton's work "the foundation for ultra-reliable software design."<sup>[<a href="#">14</a>]</sup></p>
           <p>Hamilton wrote of the incident,</p>
-          <blockquote>The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e., the ones needed for landing ... Actually, the computer was programmed to do more than recognize error conditions. A complete set of recovery programs was incorporated into the software. The software's action, in this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful moon landing it was.[23]
-            <p class="article__nasa__bqs"></p>
+          <blockquote>The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e., the ones needed for landing ... Actually, the computer was programmed to do more than recognize error conditions. A complete set of recovery programs was incorporated into the software. The software's action, in this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful moon landing it was.<sup>[<a href="#">23</a>]</sup>
+            <p class="article__nasa__bqs">— Letter from Margaret H. Hamilton, Director of Apollo Flight Computer Programming MIT Draper Laboratory, Cambridge, Massachusetts<sup>[<a href="#">24</a>]</sup>, titled "Computer Got Loaded", published in Datamation, March 1, 1971</p>
           </blockquote>
         </section>
 
         <section class="article__businesses">
-          <h1>Businesses <p class="edit">[<a href="#"> edit </a>]</p></h1>
-          <p>From 1976 through 1984, Hamilton was the CEO of a company she co-founded called Higher Order Software (HOS) to further develop ideas about error prevention and fault tolerance emerging from her experience at MIT.[25] They created a product called USE.IT, based on the HOS methodology developed at MIT.[26][27][28] It was successfully used in numerous government projects.[29][30] One notable project was to formalize and implement the first computable IDEF, C-IDEF for the Air Force, based on HOS as its formal foundation[citation needed].</p>
-          <p>The HOS methodology garnered little interest except among consultants associated with the company.[31] An evaluation conducted by the United States Navy concluded, "the HOS literature tends to advertise their ideas and products more than making a contribution in substance to the field of Computer Science."[31] Edsgar Dijkstra described the USE.IT software as "mechanized aids for the application of obsolete techniques."[32] A detailed analysis of the HOS theory and AXES language was used by Harel to develop a derived language for a more modern form of structured programming derived from HOS called the And/Or programming language from the viewpoint of and/or subgoals.[33] Referring to Dijkstra's classic work on structured programming, Harel states: “As will become clear, the "layers" in which the program is arranged, these being in the heart of the idea of structured programming, correspond to the levels of the tree.” Harel goes on to show at that time how HOS and his derived And/Or programming language relates to mathematical logic, game theory and artificial intelligence. Others have used HOS to formalize the semantics of linguistic quantifiers [34] and to formalize the design of reliable real-time embedded systems[35]</p>
-          <p>Hamilton left the company, HOS, in 1985. In March 1986, she became the founder and CEO of Hamilton Technologies, Inc. in Cambridge, Massachusetts. The company was developed around the Universal Systems Language (USL) and its associated automated environment, the 001 Tool Suite, based on her paradigm of Development Before The Fact (DBTF) for systems design and software development.[4][36][37][38]</p>
+          <h1>Businesses <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
+          <p>From 1976 through 1984, Hamilton was the CEO of a company she co-founded called Higher Order Software (HOS) to further develop ideas about error prevention and fault tolerance emerging from her experience at MIT.<sup>[<a href="#">25</a>]</sup> They created a product called USE.IT, based on the HOS methodology developed at MIT.<sup>[<a href="#">26</a>]</sup><sup>[<a href="#">27</a>]</sup><sup>[<a href="#">28</a>]</sup> It was successfully used in numerous government projects.<sup>[<a href="#">29</a>]</sup><sup>[<a href="#">30</a>]</sup> One notable project was to formalize and implement the first computable IDEF, C-IDEF for the Air Force, based on HOS as its formal foundation<sup>[<a href="#">citation needed</a>]</sup>.</p>
+          <p>The HOS methodology garnered little interest except among consultants associated with the company.<sup>[<a href="#">31</a>]</sup> An evaluation conducted by the United States Navy concluded, "the HOS literature tends to advertise their ideas and products more than making a contribution in substance to the field of Computer Science."<sup>[<a href="#">31</a>]</sup> Edsgar Dijkstra described the USE.IT software as "mechanized aids for the application of obsolete techniques."<sup>[<a href="#">32</a>]</sup> A detailed analysis of the HOS theory and AXES language was used by Harel to develop a derived language for a more modern form of structured programming derived from HOS called the And/Or programming language from the viewpoint of and/or subgoals.<sup>[<a href="#">33</a>]</sup> Referring to Dijkstra's classic work on structured programming, Harel states: “As will become clear, the "layers" in which the program is arranged, these being in the heart of the idea of structured programming, correspond to the levels of the tree.” Harel goes on to show at that time how HOS and his derived And/Or programming language relates to mathematical logic, game theory and artificial intelligence. Others have used HOS to formalize the semantics of linguistic quantifiers <sup>[<a href="#">34</a>]</sup> and to formalize the design of reliable real-time embedded systems<sup>[<a href="#">35</a>]</sup></p>
+          <p>Hamilton left the company, HOS, in 1985. In March 1986, she became the founder and CEO of Hamilton Technologies, Inc. in Cambridge, Massachusetts. The company was developed around the Universal Systems Language (USL) and its associated automated environment, the 001 Tool Suite, based on her paradigm of Development Before The Fact (DBTF) for systems design and software development.<sup>[<a href="#">4</a>]</sup><sup>[<a href="#">36</a>]</sup><sup>[<a href="#">37</a>]</sup><sup>[<a href="#">38</a>]</sup></p>
         </section>
 
         <section class="article__legacy">
-          <h1>Legacy <p class="edit">[<a href="#"> edit </a>]</p></h1>
-          <p>When Hamilton started using the term "software engineering",[39][40][41] software engineering was not taken seriously compared to other engineering; nor was it regarded as a science. She began to use the term "software engineering" during the early Apollo missions in order to give software the legitimacy of other fields such as hardware engineering. Over time the term "software engineering" has gained the same respect as any other discipline.[42] "At MIT she assisted in the creation of the core principles in computer programming as she worked with her colleagues in writing code for the world's first portable computer".[43] Hamilton's innovations go beyond the feats of playing an important role in getting man to the moon. Hamilton, along with many other female engineers alike, challenged the male dominated technology field of their time, to allow for women to enter in these STEM fields for many years to come.[44]</p>
-          <h3>Awards <p class="edit">[<a href="#"> edit </a>]</p></h3>
-          <list>
+          <h1>Legacy <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
+          <div class="article__legacy__frame">
+            <div class="article__legacy__pics">
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton_1989.jpg" class="article__legacy__pics--pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Margaret_Hamilton_1989.jpg/180px-Margaret_Hamilton_1989.jpg" alt="smiling Hamilton">
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)#/media/File:Margaret_Hamilton_1989.jpg" class="article__legacy__pics--icon">
+              </a>
+              <p class="article__legacy__pics__text">
+                Official photo for NASA, 1989.
+              </p>
+            </div>
+          </div>
+          <p>When Hamilton started using the term "software engineering",<sup>[<a href="#">39</a>]</sup><sup>[<a href="#">40</a>]</sup><sup>[<a href="#">41</a>]</sup> software engineering was not taken seriously compared to other engineering; nor was it regarded as a science. She began to use the term "software engineering" during the early Apollo missions in order to give software the legitimacy of other fields such as hardware engineering. Over time the term "software engineering" has gained the same respect as any other discipline.<sup>[<a href="#">42</a>]</sup> "At MIT she assisted in the creation of the core principles in computer programming as she worked with her colleagues in writing code for the world's first portable computer".<sup>[<a href="#">43</a>]</sup> Hamilton's innovations go beyond the feats of playing an important role in getting man to the moon. Hamilton, along with many other female engineers alike, challenged the male dominated technology field of their time, to allow for women to enter in these STEM fields for many years to come.<sup>[<a href="#">44</a>]</sup></p>
+          <h3>Awards <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h3>
+          <list class="awards">
             <ul>
-              <li>In 1986, she received the Augusta Ada Lovelace Award by the Association for Women in Computing.[6] This award is given to individuals who have excelled in either (or both) of two areas: 1. Outstanding scientific and technical achievement and 2. Extraordinary service to the computing community through their accomplishments and contributions on behalf of women in computing.[45]</li>
-              <li>In 2003, she was given the NASA Exceptional Space Act Award for scientific and technical contributions. The award included $37,200, the largest amount awarded to any individual in NASA's history.[14][46][47]</li>
-              <li>In 2009, she received the Outstanding Alumni Award by Earlham College.[6]</li>
+              <li>In 1986, she received the Augusta Ada Lovelace Award by the Association for Women in Computing.<sup>[<a href="#">6</a>]</sup> This award is given to individuals who have excelled in either (or both) of two areas: 1. Outstanding scientific and technical achievement and 2. Extraordinary service to the computing community through their accomplishments and contributions on behalf of women in computing.<sup>[<a href="#">45</a>]</sup></li>
+              <li>In 2003, she was given the NASA Exceptional Space Act Award for scientific and technical contributions. The award included $37,200, the largest amount awarded to any individual in NASA's history.<sup>[<a href="#">14</a>]</sup><sup>[<a href="#">46</a>]</sup><sup>[<a href="#">47</a>]</sup></li>
+              <li>In 2009, she received the Outstanding Alumni Award by Earlham College.<sup>[<a href="#">6</a>]</sup></li>
             </ul>
           </list>
-          <p>In addition, in 2016 a Lego minifigure of her was proposed.[48]</p>
+          <p>In addition, in 2016 a Lego minifigure of her was proposed.<sup>[<a href="#">48</a>]</sup></p>
         </section>
 
         <section class="article__personal">
-          <h1>Peronal life <p class="edit">[<a href="#"> edit </a>]</p></h1>
-          <p>She met her husband James Cox Hamilton while at Earlham College. They married in the late 1950s after Heafield earned her bachelor's degree. They had a daughter together named Lauren, who, later in her life, married the billionaire heir, actor, dancer, and choreographer James Cox Chambers. During the weekends she would often take Lauren to the lab to spend time with her daughter and simultaneously "code away creating routines that would later be added to Apollo's command module computer".[43] Margaret Hamilton and James Cox Hamilton eventually divorced.[49]</p>
+          <h1>Peronal life <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
+          <p>She met her husband James Cox Hamilton while at Earlham College. They married in the late 1950s after Heafield earned her bachelor's degree. They had a daughter together named Lauren, who, later in her life, married the billionaire heir, actor, dancer, and choreographer James Cox Chambers. During the weekends she would often take Lauren to the lab to spend time with her daughter and simultaneously "code away creating routines that would later be added to Apollo's command module computer".<sup>[<a href="#">43</a>]</sup> Margaret Hamilton and James Cox Hamilton eventually divorced.<sup>[<a href="#">49</a>]</sup></p>
         </section>
 
         <section class="article__publication">
-          <h1>Publications <p class="edit">[<a href="#"> edit </a>]</p></h1>
+          <h1>Publications <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
           <list>
             <ul>
               <li>M. Hamilton (1994), "Inside Development Before the Fact," cover story, Special Editorial Supplement, 8ES-24ES. Electronic Design, Apr. 1994.</li>
@@ -221,7 +264,7 @@
         </section>
 
         <section class="article__references">
-          <h1>References <p class="edit">[<a href="#"> edit </a>]</p></h1>
+          <h1>References <p class="edit"><sup>[<a href="#"><a href="#"> edit </a></a>]</sup></p></h1>
           <list class="article__references__list">
             <ol>
               <li>Tiffany K. Wayne (2011). American Women of Science Since 1900. ABC-CLIO. pp. 480–1. ISBN 978-1-59884-158-9.</li>
