@@ -10,6 +10,8 @@ while i < len(h):
 
 print(ah)
 
+#vers 2
+
 ah2 = 0
 
 for j in h:

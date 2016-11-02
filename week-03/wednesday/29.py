@@ -12,6 +12,6 @@ if credits >= 50 and is_bonus == False:
 elif credits < 50 and is_bonus == False:
     ab -= 1
 elif is_bonus == True:
-    ab -= 0
+    pass
 
 print(ab)
