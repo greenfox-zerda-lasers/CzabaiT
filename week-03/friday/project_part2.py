@@ -1,6 +1,8 @@
 
 def search_palindromes(string):
-
+    # string expansion for handling 'out of index error'
+    # when first/last letter is also a part of palindrome and loop searches for previous/next element
+    string = "~" + string + "~"
     pali_list = []
 
     for i in range(1,len(string)-2):
@@ -18,4 +20,4 @@ def search_palindromes(string):
 
 
 
-print(search_palindromes('dog goat dad duck doodle never'))
+print(search_palindromes('goddog goat dad duck doooodle neveroomoor'))
