@@ -1,0 +1,2 @@
+checked;Szendvics
+unchecked;Sör
