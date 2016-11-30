@@ -7,20 +7,27 @@ import sys
 class Level:
 
     def __init__(self):
+        self.level_condition_key = False
+        self.level_condition_boss = False
         self.round = 0
         self.char_coords = {}
 
         self.model = rpg_model.Model()
         self.view = rpg_view.View()
+
+        self.keyboard_bind()
+        self.view.root.mainloop()
+
+    def draw_intro(self, event):
+        self.view.canvas.unbind('<Return>')
+        self.view.canvas.delete("all")
+        self.view.draw_game()
         self.available_tiles = self.view.available_tiles
         self.hero = rpg_characters.Hero()
         self.hero_generator()
         self.view.draw_hero_stats(self.hero)
         self.enemies = []
         self.enemy_generator()
-
-        self.keyboard_bind()
-        self.view.root.mainloop()
 
     def hero_generator(self):
         self.hero_direction = 'down'
@@ -83,6 +90,7 @@ class Level:
         self.view.canvas.bind('<Down>', self.down_key)
         self.view.canvas.bind('<space>', self.space_key)
         self.view.canvas.bind('<Escape>', self.escape_key)
+        self.view.canvas.bind('<Return>', self.draw_intro)
 
     def move_events(self, coord, pos_step):
         self.view.canvas.delete(self, self.view.hero_figure)
@@ -153,14 +161,18 @@ class Level:
         hero_strike = self.hero.strike()
         enemy_strike = character.strike() #because of random
         if hero_strike > character.dp:
-            character.current_hp -= hero_strike
+            character.current_hp -= (hero_strike - character.dp)
             if character.current_hp <= 0:
+                character.current_hp = 0
                 character.status = "dead"
                 if character.has_key == True:
                     self.view.draw_key()
                     self.level_condition_key = True
                 if character.is_boss == True:
                     self.level_condition_boss = True
+                if self.level_condition_key and self.level_condition_boss:
+                    self.view.canvas.delete(self, character.id)
+                    self.view.draw_game_status("Level Completed")
                 self.hero.level_up()
                 self.view.canvas.delete(self, character.id)
                 del self.char_coords[name]
@@ -169,7 +181,8 @@ class Level:
                 self.hero.current_hp -= enemy_strike
                 if self.hero.current_hp <= 0:
                     self.hero.status = "dead"
-                    print("Game over")
+                    self.view.draw_game_status("Game Over")
+                    sys.exit()
         self.view.canvas.delete(self.view.hero_stat, self.view.hero_stat_img)
         self.view.draw_hero_stats(self.hero)
         self.view.draw_enemy_stats(character)

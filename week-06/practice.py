@@ -27,18 +27,18 @@ class First:
 
     def press_return(self, event):
         print('Enter')
-        self.on_complete('hey')
+        self.on_complete()
 
 class Second:
     def __init__(self):
-        pass
+        print('jo oreg vmi')
 
 class Main:
     def __init__(self):
         first = First(self.hammerTime)
-        second = Second()
 
-    def hammerTime(self, message):
-        print('you can touch this', message)
+
+    def hammerTime(self):
+        first1 = First(None)
 
 main = Main()

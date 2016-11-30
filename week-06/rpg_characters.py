@@ -48,7 +48,7 @@ class Skeleton(Character):
     def __init__(self, pos=[0, 0], max_hp=2, level=1, status='alive', has_key=False, is_boss=False):
         Character.__init__(self, pos, max_hp, level, status, has_key, is_boss)
         self.level = level
-        self.max_hp = 2 * self.level * self.stat_rand
+        self.max_hp = 3 * self.level * self.stat_rand
         self.current_hp = self.max_hp
         self.dp = math.ceil(self.level / 2 * self.stat_rand)
         self.sp = self.level * self.stat_rand
@@ -63,7 +63,7 @@ class Boss(Character):
     def __init__(self, pos=[0, 0], max_hp=2, level=1, status='alive', has_key=False, is_boss=True):
         Character.__init__(self, pos, max_hp, level, status, has_key, is_boss)
         self.level = level
-        self.max_hp = 2 * self.level * self.stat_rand + self.stat_rand
+        self.max_hp = 3 * self.level * self.stat_rand +  2* self.stat_rand
         self.current_hp = self.max_hp
         self.dp = math.ceil(self.level / 2 * self.stat_rand + (self.stat_rand / 2))
         self.sp = self.level * self.stat_rand + self.level

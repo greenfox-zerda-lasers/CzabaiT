@@ -7,9 +7,11 @@ class Intro:
 
     def __init__(self):
         self.cell_size = 50
+        self.width = (10+6)*self.cell_size
+        self.height = 11*self.cell_size
 
         self.root = Tk()
-        self.canvas = Canvas(self.root, width=(10+6)*self.cell_size, height=11*self.cell_size, bg="black")
+        self.canvas = Canvas(self.root, width=self.width, height=self.height, bg="black")
         self.canvas.pack()
         self.canvas.focus_set()
         self.draw_logo()
@@ -18,13 +20,13 @@ class Intro:
         self.root.mainloop()
 
     def draw_logo(self):
-        self.photo_logo = self.resize("images/logo.png", 300, 150)
-        self.canvas.create_image(((10 + 6) * self.cell_size) / 2, (11 * self.cell_size) / 2, anchor=CENTER,
+        self.photo_logo = self.resize("images/intro.gif", self.width, self.height)
+        self.canvas.create_image(0, 0, anchor=NW,
                                  image=self.photo_logo)
 
     def draw_message(self):
-            self.message = self.canvas.create_text(((10 + 6) * self.cell_size) / 2, 8 * self.cell_size, anchor=CENTER,
-                                                      font=('Tempus Sans ITC', 13, 'bold'), fill="white",
+            self.message = self.canvas.create_text(self.width / 2, 0.8 * self.height, anchor=CENTER,
+                                                      font=('Tempus Sans ITC', 17, 'bold'), fill="white",
                                                       text="Press enter")
 
     def resize(self, image_path, width, height):
@@ -33,5 +35,3 @@ class Intro:
 
     def press_return(self, event):
         print('Enter pressed')
-
-intro = Intro()

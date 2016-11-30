@@ -1,5 +1,6 @@
 import PIL.Image
 import PIL.ImageTk
+import time
 from tkinter import *
 import rpg_maps
 
@@ -9,17 +10,34 @@ class View:
         self.num_of_rows = 11
         self.num_of_columns = 10
         self.cell_size = 50
+        self.width = (10 + 6) * self.cell_size
+        self.height = 11 * self.cell_size
 
         self.root = Tk()
         self.canvas = Canvas(self.root, width=(10+6)*self.cell_size, height=11*self.cell_size, bg="black")
         self.canvas.pack()
         self.canvas.focus_set()
         self.photos = Photos()
+        self.draw_intro()
+
+    def draw_intro(self):
+        self.intro_background =self.photos.resize("images/intro.gif", self.width, self.height)
+        self.canvas.create_image(0, 0, anchor=NW, image=self.intro_background)
+        self.canvas.create_text(self.width / 2, 0.8 * self.height, anchor=CENTER, font=('Tempus Sans ITC', 17, 'bold'), fill="white", text="Press enter")
+
+    def draw_game(self):
         self.map = rpg_maps.FirstMap()
         self.available_tiles = self.map.level_availables
         self.draw_level(self.map.level_map)
         self.draw_logo()
         self.draw_instructions()
+        self.draw_game_status("Level 1")
+
+    def draw_game_status(self, text):
+        self.game_status = self.canvas.create_text(5*self.cell_size, 5*self.cell_size, font=('Tempus Sans ITC', 40, 'bold'), fill="white", text=text)
+        self.canvas.update()
+        time.sleep(1)
+        self.canvas.delete(self.game_status)
 
     def draw_logo(self):
         self.canvas.create_image(540, 0, anchor=NW, image=self.photos.photo_logo)
