@@ -8,3 +8,14 @@ var is_bonus = false;
 // if credits are smaller than 50,
 // and is_bonus is false, decrement ab by 1
 // if is_bonus is true, ab should remain the same
+
+function abModifier() {
+  if (credits >= 50 && is_bonus === false) {
+    ab -= 2;
+  } else if (credits < 50 && is_bonus === false) {
+    ab -= 1;
+  }
+  return ab;
+}
+
+console.log(abModifier());
