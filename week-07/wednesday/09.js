@@ -17,7 +17,9 @@ function letterLister (string) {
 
 
 function letterReducer (string) {
-  return string.reduce(function(acc,char){
+  var arr = string.split('');
+// ['s', 't', ...]
+  return arr.reduce(function(acc,char){
       acc[char] = (acc[char] + 1) || 1;
       return acc;
   }, {});
