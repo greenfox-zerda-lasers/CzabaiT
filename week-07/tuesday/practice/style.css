@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background-color: navy;
+  color: inherit;
+}
+
+p {
+  font-size: 20px;
+  background-color: inherit;
+  color: inherit;
+}

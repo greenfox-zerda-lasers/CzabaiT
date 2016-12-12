@@ -1,0 +1,23 @@
+article {
+  border-color: #0C1836;
+}
+
+header {
+  background-color: #0C1836;
+}
+
+h1 {
+  background-color: inherit;
+  color: white;
+}
+
+p {
+  color: #0C1836;
+}
+
+.photos {
+  border-color: #0C1836;
+
+.thumbnails:hover {
+  border: 3px solid #000000;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tuesday",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js" },
+  "author": "CzabaiT",
+  "license": "ISC",
+  "dependencies": {
+    "tape": "^4.6.3"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}

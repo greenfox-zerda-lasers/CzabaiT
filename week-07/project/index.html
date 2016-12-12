@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link id="theme_css" rel="stylesheet" type="text/css" href="style_navy.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  </head>
+
+  <body>
+    <article>
+
+      <header>
+        <h1>Gallery</h1>
+      </header>
+
+      <main>
+        <section class="first_section">
+          <p id="main_title">in the nature</p>
+          <button class="theme_button" type="button">
+            <p id="theme_button_text">Change theme</p>
+          </button>
+        </section>
+
+        <section class="second_section">
+
+          <button type="button" onclick="prevImage()">
+            <img class="button_img" src="icons/left_arrow_black.svg" onmouseover="this.src='icons/left_arrow_green.svg'" onmouseout ="this.src='icons/left_arrow_black.svg'" alt="left_button">
+          </button>
+
+          <div class="main_img">
+            <img class="photos" id="slider" src="images/first.jpg" alt="main image">
+            <p id="img_description">'photohunting' for birds and horses</p>
+          </div>
+
+          <button type="button" onclick="nextImage()">
+            <img class="button_img" src="icons/right_arrow_black.svg"
+            onmouseover="this.src='icons/right_arrow_green.svg'" onmouseout ="this.src='icons/right_arrow_black.svg'"
+            alt="right_button">
+          </button>
+
+        </section>
+
+        <section class="third_section">
+
+          <div class="thumbnails">
+            <img class="photos" data-thumb-id="0" src="images/first.jpg" alt="first">
+          </div>
+
+          <div class="thumbnails">
+            <img class="photos" data-thumb-id="1" src="images/second.jpg" alt="second">
+          </div>
+
+          <div class="thumbnails">
+            <img class="photos" data-thumb-id="2" src="images/third.jpg" alt="third">
+          </div>
+
+          <div class="thumbnails">
+            <img class="photos" data-thumb-id="3" src="images/fourth.jpg" alt="fourth">
+          </div>
+
+          <div class="thumbnails">
+            <img class="photos" data-thumb-id="4" src="images/fifth.jpg" alt="fifth">
+          </div>
+        </section>
+      </main>
+    </article>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

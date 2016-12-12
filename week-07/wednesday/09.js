@@ -7,12 +7,11 @@
 
 function letterLister (string) {
   var letterList = {};
-
-   for(var i = 0; i < string.length; i++){
-       var item = string[i];
-       letterList[item] = (letterList[item] +1 ) || 1;
-   }
-   return letterList;
+  for(var i = 0; i < string.length; i++){
+    var item = string[i];
+    letterList[item] = (letterList[item] +1 ) || 1;
+  }
+  return letterList;
 }
 
 
@@ -21,7 +20,7 @@ function letterReducer (string) {
 // ['s', 't', ...]
   return arr.reduce(function(acc,char){
       acc[char] = (acc[char] + 1) || 1;
-      return acc;
+      return acc; 
   }, {});
 }
 
