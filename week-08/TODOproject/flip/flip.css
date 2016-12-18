@@ -1,0 +1,97 @@
+html {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+}
+
+.first, .second, .pulsing {
+  width: 130px;
+  height: 130px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*----INITIAL STATE----*/
+.boxes {
+  position: relative;
+  background: yellow;
+}
+
+.first {
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(-180deg);
+  transition: all 1.5s ease-out;
+}
+
+.second {
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(0deg);
+  transition: all 1.5s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/*----ROTATION----*/
+
+.boxes:hover .first {
+  transform: rotateY(0deg);
+  transition: all 1.5s ease-out;
+}
+
+.boxes:hover .second {
+  transform: rotateY(180deg);
+  transition: all 1.5s ease-out;
+ }
+
+
+/************Pulsing***********/
+
+.pulsing {
+    width: 500px;
+    background-color: blue;
+
+}
+
+.pulsing{
+  outline: 3px solid green;
+}
+
+.pulsing:hover {
+  animation: color_change 1s infinite alternate;
+}
+
+@keyframes color_change {
+	from { outline-color: blue; }
+	to { outline-color: red; }
+}
+
+#pulsing-input {
+  outline: 3px solid green;
+}
+
+#pulsing-input:focus {
+  animation: color_change 1s infinite alternate;
+}
+
+@keyframes color_change {
+	from { outline-color: blue; }
+	to { outline-color: red; }
+}

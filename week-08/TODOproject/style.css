@@ -1,0 +1,144 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin-top: 30px;
+  flex: 0 1 auto;
+  width: 560px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  align-self: flex-end;
+  margin: 5px;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.theme-button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+}
+
+.input-line {
+  flex: 0 1 55px;
+  margin: 0 10px 0;
+  width: 435px;
+  display: flex;
+}
+
+#input-field {
+  overflow: hidden;
+  flex: 1 1 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  padding: 5px;
+  padding-left: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#input-field:focus {
+  outline: 0;
+}
+
+#input-field-label {
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+#input-field-label::before{
+  content: "\002328";
+  color: inherit;
+  position: absolute;
+  top: 15px;
+  left: -1px;
+  width: 42px;
+  font-size: 22px;
+}
+
+#input-button {
+  overflow: hidden;
+  width: 80px;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+/************MOVING TEXT************/
+
+#input-button-text {
+  position: relative;
+  left: 0px;
+}
+
+/**********************************/
+#input-button:focus {
+  outline: 0;
+}
+
+#input-field-label:hover::before, #input-button, check-button:hover, .bin-button:hover{
+  cursor: pointer;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1;
+  box-sizing: border-box;
+  margin: 0 10px 0;
+  width: 435px;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+}
+
+.todo-text p{
+  max-width: 300px;
+}
+
+.todo-commands {
+  display: flex;
+  align-items: center;
+}
+
+.bin-button {
+  display: inline-block;
+  width: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 22px;
+}
+
+.check-button {
+  display: inline-block;
+  width: 30px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 22px;
+}

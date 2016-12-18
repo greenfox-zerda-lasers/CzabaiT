@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Request Practice</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://mysterious-dusk-8248.herokuapp.com/todos', true); // Also try http://444.hu/feed
+    xhr.send();
+    console.log(xhr.result);
+
+    http.onreadystatechange = function(){
+      if(xhr.readyState === XMLHttpRequest.DONE){
+        var response = JSON.parse(xhr.response);
+        console.log(response[0].text);
+      }
+    }
+    </script>
+  </body>
+</html>

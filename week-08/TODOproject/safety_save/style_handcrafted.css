@@ -1,0 +1,81 @@
+html {
+  background-image: url("./images/lake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: #fefacd;
+  box-shadow: -2px 2px 11px -2px rgba(0,0,0,0.75);
+}
+
+.theme-button:hover {
+  color: #ff4c00;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'Molle', cursive;
+  font-weight: 400;
+}
+
+#input-field {
+  color: #9b9b9b;
+  border: 1px solid #000000;
+  box-shadow: inset 0px 1px 3px 1px rgba(224,224,224,1);
+}
+
+/********PULSING INPUT***********/
+
+#input-field:focus {
+  border: 1px solid #ffffff;
+  animation: color_change 0.8s infinite alternate;
+
+}
+
+@keyframes color_change {
+	from { border-color: #ffffff; }
+	to { border-color: #ff6600; }
+}
+
+/*******************************/
+
+#input-field-label {
+  color: #000000;
+}
+
+#input-button {
+  border: 1px solid #000000;
+  background-color: #ff4c00;
+  color: #000000;
+}
+
+#input-button:hover {
+  background-color: #ffbb00;
+}
+
+#input-field-label:hover::before, .bin-button:hover {
+  color: #ff4c00;
+}
+
+li {
+  color: #000000;
+}
+
+.bin-button {
+  color: #000000;
+}
+
+.check-button {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.check-button:hover {
+  color: #18539B;
+}
+
+.true {
+  background-color: #18539B;
+}
